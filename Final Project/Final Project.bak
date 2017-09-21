@@ -1,0 +1,28 @@
+;; The first three lines of this file were inserted by DrRacket. They record metadata
+;; about the language level of this file in a form that our tools can easily process.
+#reader(lib "htdp-advanced-reader.ss" "lang")((modname |Final Project|) (read-case-sensitive #t) (teachpacks ((lib "image.rkt" "teachpack" "2htdp") (lib "universe.rkt" "teachpack" "2htdp"))) (htdp-settings #(#t constructor repeating-decimal #t #t none #f ((lib "image.rkt" "teachpack" "2htdp") (lib "universe.rkt" "teachpack" "2htdp")) #t)))
+;; Final Project: Design Phase
+;; Grace Seiche
+
+;; a circle is a (make-circle number string string)
+(define-struct circle (radius stroke color)) ;necessary? b/c predefined in racket
+
+;; an ellipse is an (make-ellipse number number string string)
+(define-struct ellipse (width height stroke color))
+
+;; a square is a (make-square number string string)
+(define-struct square (sidelength stroke color))
+
+;; a rectangle is a (make-rectangle number number string string)
+(define-struct rectangle (width height stroke color))
+
+;; a move is a (make-move number string)
+(define-struct move (distance direction))
+
+;; a jump is a 
+
+;; a cmd is a
+;;  - move
+;;  - jump
+;;  - delete
+;;  - add
